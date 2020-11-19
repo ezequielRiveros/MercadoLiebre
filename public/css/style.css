@@ -1,0 +1,181 @@
+/**General styles*/
+main,body{
+    margin:0;
+    padding:0;
+    background-color: #ebebeb;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+/**End general styles*/
+/*Header styles*/
+header.header_layout{
+    background-color: yellow;
+}
+img.logo{
+    width: 50%;
+}
+
+input.search{
+    width: 50%;
+    display: block;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+header div nav{
+    display: none;
+}
+.header_comment{
+    color:black;
+    display: inline;
+    box-sizing: border-box;
+}
+
+i.hamburger_menu{  
+    width: 40px;
+    height: 40px;
+    background-color: #0044AA;
+    color:white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    margin-left: 43%;
+}
+
+i:hover{
+    background-color: #0022AA;
+    cursor:pointer ;
+}
+/** End Header*/
+/*Banner**/
+.banner{
+    display: block;
+    width: 100%;
+}
+/*End Banner**/
+/* Section**/
+h3.section_tittle{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size:24px;
+    width: 90%;
+    vertical-align: middle;
+}
+
+div.card{
+    border: 1px solid black;
+    margin:20px;
+    padding: 15px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+
+}
+
+div.card img{
+    width: 100%;
+}
+
+
+i.footer_icon{
+    color:blue;
+    width:15%;
+    box-sizing: border-box;
+}
+
+i.search_button{
+    border: 1px solid black;
+    box-sizing: border-box;
+    background-color: white;
+    color:black;
+    width:20px;
+    height: 20px;
+}
+
+
+.green_font{
+    color:#39b54a;
+    font-weight: bold;
+}
+.wpm{
+    padding:3px;
+    margin:0;
+}
+
+i.delivery_icon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border:1px solid #39b54a;
+    padding:10px 7px;
+    box-sizing: border-box;
+}
+/*End Section**/
+/**Footer**/
+footer{
+    background-color: white;
+    padding: 20px 5%;
+}
+
+article {
+margin: 20px 0px;
+}
+
+article * {
+    margin:0px;
+    padding:0px;
+}
+article h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+p.disclaimer{
+    font-size: 12px;
+    font-weight:500;
+}
+/** End Footer**/
+
+/**login**/
+input.input_login{
+ width: 100%;
+ padding: 10px;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ border-radius: 5px;
+ border-width: 0px;
+ display: block;
+ box-sizing: border-box;
+}
+input.input_login_button{
+    color: white;
+    background-color:#0044AA ;
+}
+input.input_login_button:hover{
+    background-color:#0022AA ;
+}
+.main_class{
+    margin: 20px;
+}
+
+/**End login**/
+/**Register**/
+input.input_reset_button{
+    color: white;
+    background-color: #AA0044;
+}
+input.input_reset_button:hover{
+    background-color: #CC1155;
+}
+
+label.input_section{
+    font-weight: 900;
+    font-size: 22px;
+}
+/**End Register**/
