@@ -19,47 +19,50 @@
 
 <body>
     <main>
-        <header class="header_layout">
-            <div>
-              <div>
-                <a href="#"
-                  ><img class="logo" src="images/logo-mercado-liebre.svg" alt=""
-                /></a>
-              </div>
-              <form method="">
-                <input
-                  type="text"
-                  name="buscar"
-                  id="buscar"
-                  value="Buscar producto, marcas y más"
-                  class="search"
-                />
-                <a href=""><i class="fas fa-search search_button"></i></a>
-              </form>
-              <i class="fas fa-hand-holding-usd header_comment"></i>
-              <p class="header_comment">Comprá en cuotas y sin tarjeta de crédito</p>
-            </div>
-            <div>
-              <nav class="nav_list">
-                <ul class="allign_end">
-                  <li><a class="links_withoutStyle" href="#">Ofertas</a></li>
-                  <li>
-                    <a class="links_withoutStyle" href="#">Tiendas Oficiales</a>
-                  </li>
-                  <li><a class="links_withoutStyle" href="#">Vender</a></li>
-                  <li><a class="links_withoutStyle" href="#">Ayuda</a></li>
-                </ul>
-                <ul>
-                  <li>
-                    <a class="links_withoutStyle" href="/registro">Crea tu cuenta</a>
-                  </li>
-                  <li><a class="links_withoutStyle" href="/login">Ingresa</a></li>
-                  <li><a class="links_withoutStyle" href="#">Mis compras</a></li>
-                </ul>
-              </nav>
-              <i class="fas fa-bars hamburger_menu"></i>
-            </div>
-          </header>
+      <header class="header_layout">
+        <div class="logo_nav">
+          <div style="width: 50%;" class="grow2">
+            <a href="#"
+              ><img class="logo" src="images/logo-mercado-liebre.svg" alt=""
+            /></a>
+          </div>
+          <form class="grow2"
+          method="">
+            <input
+              type="text"
+              name="buscar"
+              id="buscar"
+              value="Buscar producto, marcas y más"
+              class="search"
+            />
+            <a href=""><i class="fas fa-search search_button"></i></a>
+          </form>
+          <div>
+          <i class="fas fa-hand-holding-usd header_comment"></i>
+          <p class="header_comment">Comprá en cuotas y sin tarjeta de crédito</p>
+          </div>
+        </div>
+        <div>
+          <nav class="nav_list">
+            <ul class="allign_end">
+              <li><a class="links_withoutStyle" href="#">Ofertas</a></li>
+              <li>
+                <a class="links_withoutStyle" href="#">Tiendas Oficiales</a>
+              </li>
+              <li><a class="links_withoutStyle" href="#">Vender</a></li>
+              <li><a class="links_withoutStyle" href="#">Ayuda</a></li>
+            </ul>
+            <ul>
+              <li>
+                <a class="links_withoutStyle" href="/registro">Crea tu cuenta</a>
+              </li>
+              <li><a class="links_withoutStyle" href="/login">Ingresa</a></li>
+              <li><a class="links_withoutStyle" href="#">Mis compras</a></li>
+            </ul>
+          </nav>
+          <i class="fas fa-bars hamburger_menu"></i>
+        </div>
+      </header>
         <main>
             <form action="">
                 <div>
@@ -72,19 +75,35 @@
                 </div>
                 <div>
                     <label class="input_section" for="perfil_user">Perfil de Usuario</label>
+                    <div class="display_container_flex">
                     <input  class="input_login" type="radio" name="perfil_user" id="comprador"><label for="comprador">Comprador</label>
                     <input  class="input_login" type="radio" name="perfil_user" id="vendedor"><label for="vendedor">Vendedor</label>
+                  </div>
                 </div>
-                <div>
+                <div >
                     <label class="input_section">Interes</label>
-                    <input  class="input_login" type="checkbox" name="" id="electro" value="electro"><label
-                        for="electro"></label>Electro</label>
-                    <input  class="input_login" type="checkbox" name="" id="moda" value="moda"><label for="moda"></label>Moda</label>
-                    <input  class="input_login" type="checkbox" name="" id="hogar" value="hogar"><label for="hogar"></label>Hogar</label>
-                    <input  class="input_login" type="checkbox" name="" id="jugueteria" value="jugueteria"><label
-                        for="jugueteria"></label>Jugueteria</label>
-                    <input  class="input_login" type="checkbox" name="" id="vida_sana" value="vida_sana"><label for="vida_sana"></label>Vida
-                    Sana</label>
+                    <div class="display_container_flex " style="flex-direction: column;margin:20px;align-items: flex-start;">
+                          <div>
+                            <input  class="checkbox_style"  type="checkbox" name="" id="electro" value="electro">
+                            <label for="electro">Electro</label>
+                          </div> 
+                          <div>
+                            <input  class="checkbox_style" type="checkbox" name="" id="moda" value="moda">
+                            <label for="moda">Moda</label>
+                          </div>
+                          <div>
+                            <input  class="checkbox_style" type="checkbox" name="" id="hogar" value="hogar">
+                            <label for="hogar">Hogar</label>
+                          </div>
+                          <div>
+                            <input  class="checkbox_style" type="checkbox" name="" id="jugueteria" value="jugueteria">
+                            <label for="jugueteria">Jugueteria</label>
+                          </div>
+                          <div>
+                            <input  class="checkbox_style" type="checkbox" name="" id="vida_sana" value="vida_sana">
+                            <label for="vida_sana">Vida Sana</label>
+                          </div>
+                    </div>
                 </div>
                 <div>
                     <label class="input_section" for="foto">Elegi tu foto de Usuario</label>

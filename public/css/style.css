@@ -15,11 +15,11 @@ header.header_layout{
     background-color: yellow;
 }
 img.logo{
-    width: 50%;
+    width: 100%;
 }
 
 input.search{
-    width: 50%;
+    width: 100%;
     display: block;
     box-sizing: border-box;
     margin-top: 10px;
@@ -32,6 +32,7 @@ header div nav{
     color:black;
     display: inline;
     box-sizing: border-box;
+    font-size: 0.8em;
 }
 
 i.hamburger_menu{  
@@ -51,6 +52,18 @@ i.hamburger_menu{
 i:hover{
     background-color: #0022AA;
     cursor:pointer ;
+}
+
+div.logo_nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:0;
+    padding:0
+
+}
+.grow2{
+flex-grow: 0.5;
 }
 /** End Header*/
 /*Banner**/
@@ -72,7 +85,7 @@ h3.section_tittle{
 div.card{
     border: 1px solid black;
     margin:20px;
-    padding: 15px;
+    
     background-color:white;
     display: flex;
     flex-direction: column;
@@ -106,7 +119,8 @@ i.search_button{
 }
 .wpm{
     padding:3px;
-    margin:0;
+    margin-bottom:10px;
+    margin-top:5px;
 }
 
 i.delivery_icon{
@@ -152,6 +166,7 @@ input.input_login{
  border-width: 0px;
  display: block;
  box-sizing: border-box;
+ flex-shrink: 1;
 }
 input.input_login_button{
     color: white;
@@ -179,3 +194,45 @@ label.input_section{
     font-size: 22px;
 }
 /**End Register**/
+
+.display_container_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right:15px;
+    margin-left:15px;
+}
+.display_container_flex_column{
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card_content_container{
+    border-top:1px solid #ebebeb;
+    position: relative;
+    margin: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+.card_content_logo{
+    position: absolute;
+    left: 73%;
+    bottom:77px;
+    background-color:white;
+    z-index: 10;
+}
+.display_text-inline{
+    display: inline;
+}
+.display_text-width_small{
+    width: 30%;
+}
+
+.display_text-width_big{
+    width: 70%;
+}
+input.checkbox_style{
+    margin:10px
+}
