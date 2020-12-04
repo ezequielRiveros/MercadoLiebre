@@ -1,33 +1,70 @@
 /**General styles*/
-main,body{
+*{
     margin:0;
     padding:0;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color:black;
+}
+
+body,main{
     background-color: #ebebeb;
 }
 
-*{
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-}
 /**End general styles*/
 /*Header styles*/
-header.header_layout{
-    background-color: yellow;
-}
-img.logo{
-    width: 100%;
+.header_layout{  background-color: yellow;
+padding: 10px;}
+.logo_nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:15px;
+    padding-bottom:15px;
+    box-sizing: border-box;
 }
 
-input.search{
-    width: 100%;
-    display: block;
+.logo_container{
+    width: 20%;
+    min-width: 125px;
+}
+.logo{ width: 100%; }
+
+.form_container{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    min-width: 170px;
+    background-color: white;
+    border-radius: 10px;
     box-sizing: border-box;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
-header div nav{
-    display: none;
+
+.search{
+    background-color: white;
+    border: 1px solid white;
+    width: 85%;
+    min-width:150px ;
+    font-size: 1em;
+    padding: 5px;
+    border-radius: 5px;
 }
+
+.search_button{
+    background-color: white;
+    border: 1px solid white;
+    box-sizing: border-box;
+    color:black;
+    font-size: 1em;
+    width: 15%;
+    height: auto;
+    padding-top: 7px;
+    padding-bottom:7px;
+    border-radius: 5px;   
+}
+
 .header_comment{
     color:black;
     display: inline;
@@ -35,7 +72,21 @@ header div nav{
     font-size: 0.8em;
 }
 
-i.hamburger_menu{  
+.nav_menu{
+    display: none;
+}
+.list_menu{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.links_withoutStyle{
+    margin:10px;
+}
+
+.hamburger_menu{  
     width: 40px;
     height: 40px;
     background-color: #0044AA;
@@ -49,88 +100,98 @@ i.hamburger_menu{
     margin-left: 43%;
 }
 
-i:hover{
+.hamburger_menu:hover{
     background-color: #0022AA;
     cursor:pointer ;
 }
 
-div.logo_nav{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin:0;
-    padding:0
-
-}
-.grow2{
-flex-grow: 0.5;
-}
 /** End Header*/
 /*Banner**/
 .banner{
     display: block;
     width: 100%;
 }
+
 /*End Banner**/
 /* Section**/
-h3.section_tittle{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-weight: 900;
-    font-size:24px;
-    width: 90%;
-    vertical-align: middle;
-}
 
-div.card{
-    border: 1px solid black;
-    margin:20px;
-    
-    background-color:white;
+.section_tittle{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size:1.5em;
+}
+.display_container_flex{
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
+    box-sizing: border-box;
+    margin-bottom: 30px;
 }
 
-div.card img{
+.card{
+    border: 1px solid black;
+    margin:20px;
+    background-color:white;
+    min-width: 280px;
+    height: 100%;
+}
+
+.card img{
     width: 100%;
 }
 
-
-i.footer_icon{
-    color:blue;
-    width:15%;
-    box-sizing: border-box;
+.card_content_container{
+    border-top:1px solid #ebebeb;
+    padding:5%;
+    position: relative;
 }
 
-i.search_button{
-    border: 1px solid black;
-    box-sizing: border-box;
-    background-color: white;
-    color:black;
-    width:20px;
-    height: 20px;
+.card_content_logo{
+    position: relative;
+    width: 7%;
+    bottom: 30px;
+    left: 80%;
+    background-color:white;
+    padding: 5px;
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+    transition: all 0.35s ease-out;
 }
 
+.display_text-width_small{
+    width: 30%;
+    display: inline;
+}
+
+.display_text-width_big{
+    width: 70%;
+    display: inline-block;
+}
+.checkbox_style{
+    margin:10px
+}
 
 .green_font{
     color:#39b54a;
     font-weight: bold;
 }
-.wpm{
-    padding:3px;
-    margin-bottom:10px;
-    margin-top:5px;
+
+
+.element_hide{
+    display:none;
 }
 
-i.delivery_icon{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border:1px solid #39b54a;
-    padding:10px 7px;
-    box-sizing: border-box;
+.card:hover .element_hide{
+    display:block;
+    margin-top:5px;
+    font-size: 1.2em;
 }
+.card:hover  .card_content_logo {
+    transform: rotate(-90deg);
+}
+
+
+
 /*End Section**/
 /**Footer**/
 footer{
@@ -138,41 +199,53 @@ footer{
     padding: 20px 5%;
 }
 
-article {
-margin: 20px 0px;
+
+.footer_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-article * {
-    margin:0px;
-    padding:0px;
+.footer_icon{
+    color:blue;
+    font-size: 2em;
 }
-article h3{
-    font-size: 24px;
-    font-weight: bold;
+
+.disclaimer{
+    font-size: 0.7em;
+    font-weight:lighter;
 }
-p.disclaimer{
-    font-size: 12px;
-    font-weight:500;
+
+.content{
+    text-align: center;
+}
+
+h3.content{
+    font-size:1em;
+}
+
+.footer_info{
+    margin-bottom: .5em;
 }
 /** End Footer**/
 
 /**login**/
-input.input_login{
+.input_login{
  width: 100%;
  padding: 10px;
  margin-top: 20px;
  margin-bottom: 20px;
  border-radius: 5px;
- border-width: 0px;
+ border-width: 0;
  display: block;
  box-sizing: border-box;
  flex-shrink: 1;
 }
-input.input_login_button{
+.input_login_button{
     color: white;
     background-color:#0044AA ;
 }
-input.input_login_button:hover{
+.input_login_button:hover{
     background-color:#0022AA ;
 }
 .main_class{
@@ -181,58 +254,64 @@ input.input_login_button:hover{
 
 /**End login**/
 /**Register**/
-input.input_reset_button{
+.input_reset_button{
     color: white;
     background-color: #AA0044;
 }
-input.input_reset_button:hover{
+.input_reset_button:hover{
     background-color: #CC1155;
 }
 
-label.input_section{
+.input_section{
     font-weight: 900;
     font-size: 22px;
 }
 /**End Register**/
 
-.display_container_flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-right:15px;
-    margin-left:15px;
-}
-.display_container_flex_column{
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+
+
+@media (min-width: 361px){
+    .display_container_flex{
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+    }
+
 }
 
-.card_content_container{
-    border-top:1px solid #ebebeb;
-    position: relative;
-    margin: 0;
-    width: 100%;
-    padding: 20px;
-}
+@media (min-width: 768px){
+    .logo_nav{
+    flex-wrap: nowrap;
+    }   
+    .card {
+        width:40%;
+    }
 
-.card_content_logo{
-    position: absolute;
-    left: 73%;
-    bottom:77px;
-    background-color:white;
-    z-index: 10;
-}
-.display_text-inline{
-    display: inline;
-}
-.display_text-width_small{
-    width: 30%;
-}
+    .nav_menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
 
-.display_text-width_big{
-    width: 70%;
+    .hamburger_menu{
+        display: none;
+    }
+    .footer_container{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .footer_info{
+        width: 30%;
+    }
+
 }
-input.checkbox_style{
-    margin:10px
-}
+@media (min-width: 1024px) {
+    .card {
+        width:20%;
+    }
+    .product_section{
+        height: 80%;
+    }
+ }
